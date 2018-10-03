@@ -1,1 +1,5 @@
+#+TITLE: Print Templates
+
+* =stuhlog=
+
 A LaTeX based template for logging frequency and quality of infants' stool.
