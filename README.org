@@ -3,3 +3,7 @@
 * =stuhlog=
 
 A LaTeX based template for logging frequency and quality of infants' stool.
+
+* =essen=
+
+Weekly meal schedule as a LaTeX template.
