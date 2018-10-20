@@ -1,32 +1,35 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm,landscape]{geometry}
+\usepackage{booktabs}
 
 \begin{document}
 \pagestyle{empty}
 
 \centering
 \begin{tabular}{l|p{3.2cm}|p{3.2cm}|p{3.2cm}||p{3.2cm}|p{3.2cm}||p{3.2cm}|}
+  \toprule
   \multicolumn{1}{c|}{} & \multicolumn{3}{c||}{Kita} & \multicolumn{2}{c||}{Arbeit} & \\
                         & Frühstück & Obst & Snack & Frühstück & Mittag & Abend \\
-  \hline
-  Montag                &           &      &       &           &        &       \\[1.5cm]
-  \hline
-  Dienstag              &           &      &       &           &        &       \\[1.5cm]
-  \hline
-  Mittwoch              &           &      &       &           &        &       \\[1.5cm]
-  \hline
-  Donnerstag            &           &      &       &           &        &       \\[1.5cm]
-  \hline
-  Freitag               &           &      &       &           &        &       \\[1.5cm]
-  \hline
+  \midrule
+  Montag                &           &      &       &           &        &       \\[1.3cm]
+  \midrule
+  Dienstag              &           &      &       &           &        &       \\[1.3cm]
+  \midrule
+  Mittwoch              &           &      &       &           &        &       \\[1.3cm]
+  \midrule
+  Donnerstag            &           &      &       &           &        &       \\[1.3cm]
+  \midrule
+  Freitag               &           &      &       &           &        &       \\[1.3cm]
+  \bottomrule
   \multicolumn{7}{c}{} \\[0.5cm] % add some whitespace
+  \toprule
           & \multicolumn{2}{c|}{Frühstück} & \multicolumn{2}{c|}{Mittag} & \multicolumn{2}{c|}{Abend} \\
-  \hline
-  Samstag & \multicolumn{2}{c|}{}          & \multicolumn{2}{c|}{}       & \multicolumn{2}{c|}{}      \\[1.5cm]
-  \hline
-  Sonntag & \multicolumn{2}{c|}{}          & \multicolumn{2}{c|}{}       & \multicolumn{2}{c|}{}      \\[1.5cm]
-  \hline
+  \midrule
+  Samstag & \multicolumn{2}{c|}{}          & \multicolumn{2}{c|}{}       & \multicolumn{2}{c|}{}      \\[1.3cm]
+  \midrule
+  Sonntag & \multicolumn{2}{c|}{}          & \multicolumn{2}{c|}{}       & \multicolumn{2}{c|}{}      \\[1.3cm]
+  \bottomrule
 \end{tabular}
 
 \end{document}
