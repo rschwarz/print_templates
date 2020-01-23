@@ -1,16 +1,18 @@
 \documentclass[a4paper]{article}
 \usepackage[utf8]{inputenc}
+
 \usepackage{booktabs}
 \usepackage{fullpage}
+\usepackage{graphicx}
+
+\newcommand{\Rot}[1]{\rotatebox{80}{#1}}
 
 \begin{document}
 \pagestyle{empty}
 \centering
 \begin{tabular}{p{1cm}|p{1cm}||p{.4cm}|p{.4cm}|p{.4cm}||p{.4cm}|p{.4cm}|p{.4cm}|p{.4cm}||p{2.5cm}|p{4cm}}
   \toprule
-  \multicolumn{2}{c}{} & \multicolumn{3}{c}{Menge} & \multicolumn{4}{c}{Konsistenz} & \multicolumn{2}{c}{}\\
-  \midrule
-  Tag & Zeit & S & M & L & 1 & 2 & 3 & 4 & Trinken & Bemerkungen \\
+  Tag & Zeit & \Rot{klein} & \Rot{mittel} & \Rot{groß} & \Rot{flüssig} & \Rot{weich} & \Rot{geformt} & \Rot{hart} & Trinken & Bemerkungen \\
   \midrule
       &      &   &   &   &   &   &   &   &         &             \\[21cm]
   \bottomrule
