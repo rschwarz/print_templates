@@ -2,9 +2,13 @@
 % Author: Dario Orescanin
 
 \documentclass[a4paper]{minimal}
+\usepackage[margin=1cm]{geometry}
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usetikzlibrary {decorations.text}
+
+\newcommand{\Font}[1]{\textsf{\textbf{#1}}}
+
 \begin{document}
 
 \begin{centering}
@@ -12,7 +16,7 @@
 % Defining constants and derived numbers.
 
 % Radius of outer circle, encompassing everything.
-\def\outerradius{8.5}
+\def\outerradius{9.5}
 
 % Day labels
 \def\daylabelradius{0.99 * \outerradius}
@@ -78,49 +82,49 @@
 
   % day labels
   % January
-  \foreach \x [evaluate=\x as \xdeg using \x - 0.5] in {1,...,31} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {$\x$};
+  \foreach \x [evaluate=\x as \xdeg using \x - 0.5] in {1,...,31} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {\Font{\x}};
   % Feburary
-  \foreach \x [evaluate=\x as \xdeg using \x + 31 - 0.5] in {1,...,28} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {$\x$};
+  \foreach \x [evaluate=\x as \xdeg using \x + 31 - 0.5] in {1,...,28} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {\Font{\x}};
   % March
-  \foreach \x [evaluate=\x as \xdeg using \x + 59 - 0.5] in {1,...,31} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {$\x$};
+  \foreach \x [evaluate=\x as \xdeg using \x + 59 - 0.5] in {1,...,31} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {\Font{\x}};
   % April
-  \foreach \x [evaluate=\x as \xdeg using \x + 90 - 0.5] in {1,...,30} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {$\x$};
+  \foreach \x [evaluate=\x as \xdeg using \x + 90 - 0.5] in {1,...,30} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {\Font{\x}};
   % May
-  \foreach \x [evaluate=\x as \xdeg using \x + 120 - 0.5] in {1,...,31} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {$\x$};
+  \foreach \x [evaluate=\x as \xdeg using \x + 120 - 0.5] in {1,...,31} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {\Font{\x}};
   % June
-  \foreach \x [evaluate=\x as \xdeg using \x + 151 - 0.5] in {1,...,30} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {$\x$};
+  \foreach \x [evaluate=\x as \xdeg using \x + 151 - 0.5] in {1,...,30} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {\Font{\x}};
   % July
-  \foreach \x [evaluate=\x as \xdeg using \x + 181 - 0.5] in {1,...,31} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {$\x$};
+  \foreach \x [evaluate=\x as \xdeg using \x + 181 - 0.5] in {1,...,31} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {\Font{\x}};
   % August
-  \foreach \x [evaluate=\x as \xdeg using \x + 212 - 0.5] in {1,...,31} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {$\x$};
+  \foreach \x [evaluate=\x as \xdeg using \x + 212 - 0.5] in {1,...,31} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {\Font{\x}};
   % September
-  \foreach \x [evaluate=\x as \xdeg using \x + 243 - 0.5] in {1,...,30} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {$\x$};
+  \foreach \x [evaluate=\x as \xdeg using \x + 243 - 0.5] in {1,...,30} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {\Font{\x}};
   % October
-  \foreach \x [evaluate=\x as \xdeg using \x + 273 - 0.5] in {1,...,31} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {$\x$};
+  \foreach \x [evaluate=\x as \xdeg using \x + 273 - 0.5] in {1,...,31} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {\Font{\x}};
   % November
-  \foreach \x [evaluate=\x as \xdeg using \x + 304 - 0.5] in {1,...,30} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {$\x$};
+  \foreach \x [evaluate=\x as \xdeg using \x + 304 - 0.5] in {1,...,30} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {\Font{\x}};
   % December
-  \foreach \x [evaluate=\x as \xdeg using \x + 334 - 0.5] in {1,...,31} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {$\x$};
+  \foreach \x [evaluate=\x as \xdeg using \x + 334 - 0.5] in {1,...,31} \draw ($(\daytodeg*\xdeg:\daylabelradius)$) node[scale=\daylabelscale, rotate=-90] {\Font{\x}};
 
   % month labels
-  \path ($(0*\daytodeg:\monthlabelradius)$) arc [start angle=0*\daytodeg, end angle=31*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped, rotate=180] {JANUAR};
-  \path ($(31*\daytodeg:\monthlabelradius)$) arc [start angle=31*\daytodeg, end angle=59*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped, rotate=180] {FEBRUAR};
-  \path ($(59*\daytodeg:\monthlabelradius)$) arc [start angle=59*\daytodeg, end angle=90*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped, rotate=180] {MÄRZ};
-  \path ($(90*\daytodeg:\monthlabelradius)$) arc [start angle=90*\daytodeg, end angle=120*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped] {APRIL};
-  \path ($(120*\daytodeg:\monthlabelradius)$) arc [start angle=120*\daytodeg, end angle=151*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped] {MAI};
-  \path ($(151*\daytodeg:\monthlabelradius)$) arc [start angle=151*\daytodeg, end angle=181*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped] {JUNI};
-  \path ($(181*\daytodeg:\monthlabelradius)$) arc [start angle=181*\daytodeg, end angle=212*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped, rotate=180] {JULI};
-  \path ($(212*\daytodeg:\monthlabelradius)$) arc [start angle=212*\daytodeg, end angle=243*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped, rotate=180] {AUGUST};
-  \path ($(243*\daytodeg:\monthlabelradius)$) arc [start angle=243*\daytodeg, end angle=273*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped, rotate=180] {SEPTEMBER};
-  \path ($(273*\daytodeg:\monthlabelradius)$) arc [start angle=273*\daytodeg, end angle=304*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped] {OKTOBER};
-  \path ($(304*\daytodeg:\monthlabelradius)$) arc [start angle=304*\daytodeg, end angle=334*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped] {NOVEMBER};
-  \path ($(334*\daytodeg:\monthlabelradius)$) arc [start angle=334*\daytodeg, end angle=365*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped] {DEZEMBER};
+  \path ($(0*\daytodeg:\monthlabelradius)$) arc [start angle=0*\daytodeg, end angle=31*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped, rotate=180] {\Font{JANUAR}};
+  \path ($(31*\daytodeg:\monthlabelradius)$) arc [start angle=31*\daytodeg, end angle=59*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped, rotate=180] {\Font{FEBRUAR}};
+  \path ($(59*\daytodeg:\monthlabelradius)$) arc [start angle=59*\daytodeg, end angle=90*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped, rotate=180] {\Font{MÄRZ}};
+  \path ($(90*\daytodeg:\monthlabelradius)$) arc [start angle=90*\daytodeg, end angle=120*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped] {\Font{APRIL}};
+  \path ($(120*\daytodeg:\monthlabelradius)$) arc [start angle=120*\daytodeg, end angle=151*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped] {\Font{MAI}};
+  \path ($(151*\daytodeg:\monthlabelradius)$) arc [start angle=151*\daytodeg, end angle=181*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped] {\Font{JUNI}};
+  \path ($(181*\daytodeg:\monthlabelradius)$) arc [start angle=181*\daytodeg, end angle=212*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped, rotate=180] {\Font{JULI}};
+  \path ($(212*\daytodeg:\monthlabelradius)$) arc [start angle=212*\daytodeg, end angle=243*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped, rotate=180] {\Font{AUGUST}};
+  \path ($(243*\daytodeg:\monthlabelradius)$) arc [start angle=243*\daytodeg, end angle=273*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped, rotate=180] {\Font{SEPTEMBER}};
+  \path ($(273*\daytodeg:\monthlabelradius)$) arc [start angle=273*\daytodeg, end angle=304*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped] {\Font{OKTOBER}};
+  \path ($(304*\daytodeg:\monthlabelradius)$) arc [start angle=304*\daytodeg, end angle=334*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped] {\Font{NOVEMBER}};
+  \path ($(334*\daytodeg:\monthlabelradius)$) arc [start angle=334*\daytodeg, end angle=365*\daytodeg, radius=\monthlabelradius] node[scale=\monthlabelscale, midway, sloped] {\Font{DEZEMBER}};
 
   % season labels
-  \path ($(-10*\daytodeg:\seasonlabelradius)$) arc [start angle=-10*\daytodeg, end angle=81*\daytodeg, radius=\seasonlabelradius] node[scale=\seasonlabelscale, midway, sloped, rotate=180] {WINTER};  
-  \path ($(81*\daytodeg:\seasonlabelradius)$) arc [start angle=81*\daytodeg, end angle=172*\daytodeg, radius=\seasonlabelradius] node[scale=\seasonlabelscale, midway, sloped] {FRÜHLING};  
-  \path ($(172*\daytodeg:\seasonlabelradius)$) arc [start angle=172*\daytodeg, end angle=264*\daytodeg, radius=\seasonlabelradius] node[scale=\seasonlabelscale, midway, sloped, rotate=180] {SOMMER};  
-  \path ($(264*\daytodeg:\seasonlabelradius)$) arc [start angle=264*\daytodeg, end angle=355*\daytodeg, radius=\seasonlabelradius] node[scale=\seasonlabelscale, midway, sloped] {HERBST};  
+  \path ($(-10*\daytodeg:\seasonlabelradius)$) arc [start angle=-10*\daytodeg, end angle=81*\daytodeg, radius=\seasonlabelradius] node[scale=\seasonlabelscale, midway, sloped, rotate=180] {\Font{WINTER}};  
+  \path ($(81*\daytodeg:\seasonlabelradius)$) arc [start angle=81*\daytodeg, end angle=172*\daytodeg, radius=\seasonlabelradius] node[scale=\seasonlabelscale, midway, sloped] {\Font{FRÜHLING}};  
+  \path ($(172*\daytodeg:\seasonlabelradius)$) arc [start angle=172*\daytodeg, end angle=264*\daytodeg, radius=\seasonlabelradius] node[scale=\seasonlabelscale, midway, sloped, rotate=180] {\Font{SOMMER}};  
+  \path ($(264*\daytodeg:\seasonlabelradius)$) arc [start angle=264*\daytodeg, end angle=355*\daytodeg, radius=\seasonlabelradius] node[scale=\seasonlabelscale, midway, sloped] {\Font{HERBST}};  
   
 \end{tikzpicture}
 \end{centering}
