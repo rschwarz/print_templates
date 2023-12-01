@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2cm]{geometry}
+\usepackage{tikz}
+
+
+\begin{document}
+
+% no page number
+\pagestyle{empty}
+
+% horizontal centering
+\centering
+
+% vertical centering, part 1 of 2
+\hspace{0pt}
+\vfill
+
+\tikzset{Title/.style={text width=0.3\textwidth, align=center}}
+
+\begin{tikzpicture}[scale=1.5]
+  \node[Title] at (0, 12) {\textsf{ALARM IM UHRENLAND}};
+  \draw[color=black, very thick](0,10) circle (1.5);
+  \node[Title] at (4, 12) {\textsf{BEI LOTTI WEISS MAN NIE}};
+  \draw[color=black, very thick](4,10) circle (1.5);
+  \node[Title] at (8, 12) {\textsf{DAS SEEPFERDCHEN WILL BERÜHMT WERDEN}};
+  \draw[color=black, very thick](8,10) circle (1.5);
+
+  \node[Title] at (0, 7) {\textsf{OSKARS ABENTEUER}};
+  \draw[color=black, very thick](0,5) circle (1.5);
+  \node[Title] at (4, 7) {\textsf{VERZAUBERTE INSEL}};
+  \draw[color=black, very thick](4,5) circle (1.5);
+  \node[Title] at (8, 7) {\textsf{VICKY VICTORIA UND DIE VERSCHWUNDENE LADY}};
+  \draw[color=black, very thick](8,5) circle (1.5);
+
+  \node[Title] at (0, 2) {\textsf{WACKER DER SCHARCHKIESEL}};
+  \draw[color=black, very thick](0,0) circle (1.5);
+  \node[Title] at (4, 2) {\textsf{WILLKOMMEN IM KOFFERLAND}};
+  \draw[color=black, very thick](4,0) circle (1.5);
+  \node[Title] at (8, 2) {\textsf{ZACHARIAS WALFISCHZAHN}};
+  \draw[color=black, very thick](8,0) circle (1.5);
+\end{tikzpicture}
+
+% vertical centering, part 2 of 2
+\hspace{0pt}
+\vfill
+
+\end{document}
