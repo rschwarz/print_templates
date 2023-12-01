@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2cm]{geometry}
+\usepackage{tikz}
+
+
+\begin{document}
+
+% no page number
+\pagestyle{empty}
+
+% horizontal centering
+\centering
+
+% vertical centering, part 1 of 2
+\hspace{0pt}
+\vfill
+
+\tikzset{Title/.style={text width=0.3\textwidth, align=center}}
+
+\begin{tikzpicture}[scale=1.5]
+  \node[Title] at (0, 12) {\textsf{KOMMT EIN\\VOGEL GEFLOGEN}};
+  \draw[color=black, very thick](0,10) circle (1.5);
+  \node[Title] at (4, 12) {\textsf{TÖFF TÖFF TÖFF DIE EISENBAHN}};
+  \draw[color=black, very thick](4,10) circle (1.5);
+  \node[Title] at (8, 12) {\textsf{ICH BIN EIN DICKER TANZBÄR}};
+  \draw[color=black, very thick](8,10) circle (1.5);
+
+  \node[Title] at (0, 7) {\textsf{ESELCHEN \& KLEINER ENGEL\\KLEINE HEXE}};
+  \draw[color=black, very thick](0,5) circle (1.5);
+  \node[Title] at (4, 7) {\textsf{TANTE MILA}};
+  \draw[color=black, very thick](4,5) circle (1.5);
+  \node[Title] at (8, 7) {\textsf{CONNY}};
+  \draw[color=black, very thick](8,5) circle (1.5);
+
+  \node[Title] at (0, 2) {\textsf{TIGER \& BÄR}};
+  \draw[color=black, very thick](0,0) circle (1.5);
+  \node[Title] at (4, 2) {\textsf{PEER GYNT\\PUPPENFEE}};
+  \draw[color=black, very thick](4,0) circle (1.5);
+  \node[Title] at (8, 2) {\textsf{BUMMELKASTEN}};
+  \draw[color=black, very thick](8,0) circle (1.5);
+\end{tikzpicture}
+
+% vertical centering, part 2 of 2
+\hspace{0pt}
+\vfill
+
+\end{document}
